@@ -91,7 +91,7 @@ class QuickSorterTest extends TestCase
         for ($i = 0; $i <= 10; $i++) {
             $randomNumbersArray = range(rand(-100, 0), rand(1, 100));
             shuffle($randomNumbersArray);
-            for ($i = 0; $i <= 10; $i++) {
+            for ($i = 0; $i <= 100; $i++) {
                 $randomIntegersData[] = [$randomNumbersArray];
             }
         }
