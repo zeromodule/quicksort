@@ -137,10 +137,4 @@ class QuickSorter implements Sorter
 
         list($input[$left], $input[$right]) = [$input[$right], $input[$left]];
     }
-
-    public function compare($a, $b)
-    {
-
-    }
-
 }
