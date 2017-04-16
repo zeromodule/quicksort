@@ -88,10 +88,12 @@ class QuickSorterTest extends TestCase
     {
         $randomIntegersData = [];
 
-        for ($i = 0; $i <= 100; $i++) {
-            $randomNumbersArray = range(rand(0, 1000), rand(1001, 2000));
+        for ($i = 0; $i <= 10; $i++) {
+            $randomNumbersArray = range(rand(-100, 0), rand(1, 100));
             shuffle($randomNumbersArray);
-            $randomIntegersData[] = [$randomNumbersArray];
+            for ($i = 0; $i <= 10; $i++) {
+                $randomIntegersData[] = [$randomNumbersArray];
+            }
         }
 
         return array_merge($randomIntegersData, [
@@ -101,6 +103,7 @@ class QuickSorterTest extends TestCase
             [[3,2,1]],
             [[-1,0,1]],
             [[2,2,2,2]],
+            [[1,2,2,2]],
             [[1,2,3,4,5,7,6]],
             [[-100, 0.1, 3402934, 23.5, 9, 99]],
             [[-9,-8,-7,-6,-5]],
